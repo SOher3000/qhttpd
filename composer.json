@@ -10,7 +10,7 @@
     "require": {
         "php": ">=5.4.0",
         "comos/qpm": "~1.0",
-        "pear2/console_commandline":"~0.2"
+        "pear2/console_commandline":"0.2.*"
     },
     "autoload": {
         "psr-4": {"Qhttpd\\": "src"}

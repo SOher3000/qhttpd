@@ -27,10 +27,14 @@ class Qhttpd
     }
     
     protected function initSocket() {
-        
+        $this->sock = socket_create();
+        socket_bind($this->sock, $address, $port);
+        socket_listen($this->sock, $bakclog);
     }
+    
     public function newTask() {
-        
+        $rs = socket_accept($this->sock);
+        return new Task($rs);
     }
     
 }
