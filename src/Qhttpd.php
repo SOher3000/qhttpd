@@ -1,7 +1,6 @@
 <?php
 namespace Qhttpd;
 
-use Comos\Qpm\Supervision\Supervisor;
 
 class Qhttpd
 {
